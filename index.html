@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Meu Blog — Sam Trainer</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     :root{
       --bg: #0f172a;
       --header-bg: #1e293b;
+      --section-bg: #020617;
       --text: #e5e7eb;
       --accent: #38bdf8;
       --link: #22d3ee;
@@ -20,6 +21,7 @@
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
 
     header {
@@ -34,46 +36,142 @@
       font-size: 2rem;
     }
 
-    /* Logo centralizada abaixo do título */
     .logo {
       display: block;
-      margin: 14px auto 0; /* centraliza e adiciona espaço acima */
-      width: 150px;        /* ajuste conforme necessário */
+      margin: 14px auto 0;
+      width: 150px;
       height: auto;
     }
 
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: var(--link);
+      font-weight: bold;
+    }
+
     main {
-      padding: 40px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
-    a {
-      color: var(--link);
-      text-decoration: none;
+    section {
+      background-color: var(--section-bg);
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: var(--header-bg);
+    }
+
+    input, button {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    button {
+      background-color: var(--accent);
+      color: #020617;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Sam Trainer</h1>
-    <!-- Substitua o src abaixo pelo nome do arquivo da sua imagem no repositório -->
     <img src="logotipo-preto.png" alt="Sam Trainer Treinamento Personalizado" class="logo">
     <p>Treinamento Personalizado</p>
+
+    <nav>
+      <a href="#corrida">Corrida</a>
+      <a href="#esportes">Esportes</a>
+      <a href="#natacao">Natação</a>
+      <a href="#educacao">Educação Física</a>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
   </header>
 
   <main>
-    <h2>Sobre mim</h2>
-    <p>
-      Olá! Estou criando meu site com GitHub Pages.
-      Em breve vou publicar conteúdos aqui.
-    </p>
 
-    <h2>Links</h2>
-    <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">GitHub</a></li>
-    </ul>
+    <section id="corrida">
+      <h2>Corrida</h2>
+      <p>
+        Conteúdos sobre corrida, desempenho, prevenção de lesões,
+        treinos para iniciantes e avançados.
+      </p>
+    </section>
+
+    <section id="esportes">
+      <h2>Esportes</h2>
+      <p>
+        Dicas, curiosidades e análises sobre diferentes modalidades esportivas
+        e preparação física.
+      </p>
+    </section>
+
+    <section id="natacao">
+      <h2>Natação</h2>
+      <p>
+        Treinos, técnicas, benefícios e orientações para nadadores
+        de todos os níveis.
+      </p>
+    </section>
+
+    <section id="educacao">
+      <h2>Educação Física</h2>
+      <p>
+        Reflexões, estudos e conteúdos relacionados à educação física,
+        saúde e qualidade de vida.
+      </p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá! Sou o Sam Trainer. Este site foi criado para compartilhar
+        conhecimento, experiências e conteúdos sobre esporte e treinamento.
+      </p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+      <p>
+        Inscreva-se para receber novidades, artigos e dicas diretamente no seu e-mail.
+      </p>
+      <input type="email" placeholder="Digite seu e-mail">
+      <br>
+      <button>Inscrever-se</button>
+    </section>
+
   </main>
+
+  <footer>
+    © 2026 — Sam Trainer • GitHub Pages
+  </footer>
+
 </body>
 </html>
