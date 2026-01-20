@@ -2,147 +2,254 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-
-  <title>Natação: um esporte essencial à vida — Sam Trainer</title>
-
-  <meta name="description" content="A natação é um esporte fundamental para a saúde física e mental. Conheça seus benefícios, habilidades básicas e importância ao longo da vida.">
-  <meta name="keywords" content="natação, saúde, esporte, educação física, habilidades aquáticas, bem-estar">
-  <meta name="author" content="Sam Trainer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Sam Trainer — Treinamento Personalizado & Saúde</title>
 
-  <!-- SEO social -->
-  <meta property="og:title" content="Natação: um esporte essencial à vida">
-  <meta property="og:description" content="Entenda por que a natação é uma habilidade fundamental para o ser humano e seus benefícios para corpo e mente.">
-  <meta property="og:type" content="article">
+  <meta name="description" content="Sam Trainer — Conteúdos sobre corrida, esportes, natação e educação física. Treinamento personalizado, saúde e desempenho físico.">
+  <meta name="keywords" content="natação, corrida, esportes, educação física, treinamento personalizado, saúde, bem-estar">
+  <meta name="author" content="Sam Trainer">
+
+  <meta property="og:title" content="Sam Trainer — Treinamento Personalizado">
+  <meta property="og:description" content="Entenda por que o esporte e a natação são habilidades fundamentais para o ser humano.">
+  <meta property="og:type" content="website">
 
   <style>
-    :root{
+    :root {
       --bg: #0f172a;
+      --header-bg: #1e293b;
+      --section-bg: #1e293b66; /* Leve transparência para profundidade */
+      --card-bg: #020617;
       --text: #e5e7eb;
       --accent: #38bdf8;
       --link: #22d3ee;
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: var(--bg);
       color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
       line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
     }
 
     header h1 {
       color: var(--accent);
-      font-size: 2rem;
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: -1px;
+    }
+
+    nav {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: var(--link);
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      margin-bottom: 50px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.8rem;
+      margin-top: 0;
+      border-left: 5px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 0.95rem;
-      opacity: 0.8;
-    }
-
-    article h2 {
-      color: var(--accent);
-      margin-top: 30px;
-    }
-
+    /* Estilo para a Citação da Natação */
     blockquote {
       border-left: 4px solid var(--accent);
-      padding-left: 15px;
+      padding: 10px 20px;
       margin: 30px 0;
       font-style: italic;
-      opacity: 0.9;
+      background: var(--header-bg);
+      border-radius: 0 10px 10px 0;
     }
 
-    a {
-      color: var(--link);
-      text-decoration: none;
-      font-weight: bold;
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
     }
 
     footer {
-      margin-top: 50px;
+      text-align: center;
+      padding: 40px 20px;
       font-size: 0.9rem;
-      opacity: 0.8;
+      background-color: var(--header-bg);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      section { padding: 20px; }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Natação: um esporte essencial à vida</h1>
-    <p>Por Sam Trainer • Educação Física e Saúde</p>
-  </header>
+<header role="banner">
+  <h1>Sam Trainer</h1>
+  <p>Educação Física • Saúde • Performance</p>
 
-  <main role="main">
-    <article>
+  <nav role="navigation" aria-label="Menu principal">
+    <a href="#artigos">Artigos</a>
+    <a href="#corrida">Corrida</a>
+    <a href="#educacao">Educação Física</a>
+    <a href="#esportes">Esportes</a>
+    <a href="#natacao">Natação</a>
+    <a href="#contato">Contato</a>
+    <a href="#sobre">Sobre</a>
+  </nav>
+</header>
 
+<main role="main">
+
+  <section id="artigos">
+    <h2>Destaques</h2>
+    <ul>
+      <li><a href="#natacao">Natação: Um esporte essencial à vida</a></li>
+      <li><a href="#corrida">Corrida: Saúde, desempenho e constância</a></li>
+      <li><a href="#educacao">Educação Física e formação integral</a></li>
+      <li><a href="#esportes">O papel dos esportes no desenvolvimento humano</a></li>
+    </ul>
+  </section>
+
+  <section id="corrida">
+    <h2>Corrida</h2>
+    <p>
+      A corrida é uma das formas mais naturais de locomoção do ser humano e uma das práticas físicas mais acessíveis para a promoção da saúde. Ao correr, o corpo trabalha de forma integrada, exigindo coordenação, resistência e força.
+    </p>
+    <p>
+      A prática regular melhora a capacidade cardiorrespiratória, fortalece articulações e auxilia no controle do peso. Além disso, atua diretamente na saúde mental, auxiliando na redução do estresse e da ansiedade.
+    </p>
+  </section>
+
+  <section id="educacao">
+    <h2>Educação Física</h2>
+    <p>
+      A Educação Física estuda o movimento humano em suas diferentes manifestações. Seu papel vai muito além da prática esportiva, contribuindo para a formação integral do indivíduo através de capacidades cognitivas e sociais.
+    </p>
+    <p>
+      Estimula valores como cooperação, respeito e autonomia. O movimento é uma ferramenta essencial para a promoção da qualidade de vida em todas as fases da vida.
+    </p>
+  </section>
+
+  <section id="esportes">
+    <h2>Esportes</h2>
+    <p>
+      Os esportes desempenham um papel fundamental no desenvolvimento físico e emocional. Cada modalidade exige diferentes habilidades motoras e estratégias, promovendo a disciplina e a resiliência.
+    </p>
+    <p>
+      Independentemente do nível de performance, o esporte deve ser entendido como um meio de socialização e superação de desafios pessoais.
+    </p>
+  </section>
+
+  <article id="natacao">
+    <section>
+      <h2>Natação: Um esporte essencial à vida</h2>
       <p>
-        A natação é amplamente reconhecida como um dos esportes mais completos
-        e essenciais à vida humana. Diferente de habilidades inatas como respirar
-        ou caminhar, o ser humano não nasce sabendo nadar. Assim como a leitura
-        e a escrita, as habilidades aquáticas precisam ser aprendidas, praticadas
-        e aperfeiçoadas ao longo do tempo.
+        A natação é amplamente reconhecida como um dos esportes mais completos. Diferente de habilidades inatas como respirar ou caminhar, o ser humano não nasce sabendo nadar. Assim como a leitura e a escrita, as habilidades aquáticas precisam ser aprendidas e aperfeiçoadas.
       </p>
 
       <p>
-        O processo de aprendizagem da natação envolve a adaptação progressiva
-        ao meio líquido, desenvolvendo movimentos e habilidades fundamentais,
-        como o controle da respiração, a flutuação, as batidas de perna
-        e a coordenação dos braços. Esses elementos formam a base para a segurança
-        aquática e para a execução eficiente dos diferentes estilos de nado.
+        O processo envolve a adaptação progressiva ao meio líquido, desenvolvendo o controle da respiração, a flutuação e a coordenação motora. Esses elementos formam a base para a segurança aquática e para a execução eficiente dos nados.
       </p>
 
-      <h2>Benefícios físicos e fisiológicos</h2>
-
+      <h3>Benefícios Físicos e Mentais</h3>
       <p>
-        Do ponto de vista fisiológico, a natação proporciona importantes benefícios
-        cardiorrespiratórios, contribuindo para o aumento da resistência aeróbica
-        e para a melhora da capacidade pulmonar. O trabalho muscular realizado
-        dentro da água ocorre de forma global, promovendo ganho de força,
-        aumento do tônus muscular e menor impacto sobre as articulações,
-        quando comparado a outras modalidades esportivas.
+        Proporciona importantes ganhos cardiorrespiratórios e aumento da capacidade pulmonar. O trabalho muscular ocorre de forma global com <strong>baixo impacto</strong> sobre as articulações. 
       </p>
-
       <p>
-        Além disso, a prática regular de exercícios físicos, como a natação,
-        estimula a liberação de neurotransmissores responsáveis pela regulação
-        da química cerebral, favorecendo a redução do estresse, da ansiedade
-        e a melhora do bem-estar psicológico.
-      </p>
-
-      <h2>Natação e saúde mental</h2>
-
-      <p>
-        Os benefícios da natação não se restringem apenas ao corpo.
-        O ambiente aquático proporciona sensações de relaxamento,
-        concentração e consciência corporal, fatores que contribuem
-        diretamente para a saúde mental e emocional do praticante.
+        No aspecto psicológico, o ambiente aquático estimula neurotransmissores que favorecem o relaxamento, a redução do estresse e uma maior consciência corporal.
       </p>
 
       <blockquote>
-        “Todo homem culto deve saber ler, escrever e nadar.”  
-        <br>— Platão
+        "Todo homem culto deve saber ler, escrever e nadar."<br>
+        <strong>— Platão</strong>
       </blockquote>
+    </section>
+  </article>
 
-      <p>
-        Essa célebre frase atribuída a Platão reforça a ideia de que a natação
-        deve ser compreendida não apenas como uma atividade esportiva,
-        mas como uma habilidade essencial para a vida, a autonomia
-        e a formação integral do ser humano.
-      </p>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>
+      Inscreva-se na newsletter ou envie suas dúvidas utilizando o formulário abaixo.
+    </p>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSftvJTykmm2Wtih825hrZMu9B4X-AUivEI_vIxUzjVF_9fPLA/viewform?embedded=true"
+      title="Formulário de contato"
+      loading="lazy">
+      Carregando…
+    </iframe>
+  </section>
 
-    </article>
-  </main>
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou o <strong>Sam Trainer</strong>. Este espaço foi criado para compartilhar conhecimento sobre esporte e saúde, promovendo uma abordagem consciente e acessível ao movimento humano.
+    </p>
+  </section>
 
-  <footer>
-    <p><a href="../index.html">← Voltar para o site</a></p>
-    <p>© 2026 — Sam Trainer</p>
-  </footer>
+</main>
+
+<footer>
+  <p>© 2026 — Sam Trainer • Conteúdo focado em Educação Física e Bem-estar</p>
+</footer>
 
 </body>
 </html>
